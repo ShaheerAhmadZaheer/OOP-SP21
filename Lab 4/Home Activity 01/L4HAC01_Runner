@@ -1,0 +1,28 @@
+package l04hac01;
+
+/**
+ *
+ * @author cui
+ */
+public class L04HAC01Runner {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Marks m1 = new Marks();
+        m1.setEng(84);
+        m1.setMath(72);
+        m1.setUrdu(76);
+        m1.display();
+        
+        Marks m2 = new Marks(90, 89, 86);
+        m2.display();
+        m2.setEng(72);
+        System.out.println("English marks after updating: "+m2.getEng());
+        m2.display();
+        
+        
+    }
+    
+}
